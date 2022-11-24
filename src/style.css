@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F3EFE0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.calc-container{
+    height: 370px;
+    width: 270px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px ;
+    background-color: #393E46;
+}
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.small-buttons-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.btn, .equal-to-btn{
+    aspect-ratio: 1/1;
+    height:50px;
+    margin: 5px;
+}
+.btn:hover{
+box-shadow: 0 0 10px rgb(0, 0, 0);
+scale: 1.1;
+border-radius:5px;
+background-color: #F3EFE0;
+}
+.btn:active{
+    background-color: #B2B2B2;
+}
+
+.display{
+    width: 92%;
+    margin: 5px 0;
+    height: 50px;
+    border: 1px solid;
+    background-color: #BAD1C2;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 2rem;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+/* special buttons styling */
+
+.del-btn:active, .clear-btn:active{
+    background-color:#ff6464d3;
+}
+.equal-to-btn:hover{
+    box-shadow: 0 0 10px black;
+    
+scale: 1.01;
+}
+.cal-btn:active{
+    background-color: #B8E8FC;
+}
