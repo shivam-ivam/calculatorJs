@@ -14,28 +14,37 @@
 
   <body>
     <div class="calc-container">
-      <div class="display">3452</div>
+      <div class="display">0</div>
       <div class="buttons-container">
         <div class="small-buttons-container">
-          <button class="num-btn btn num1">1</button>
-          <button class="num-btn btn num2">2</button>
-          <button class="num-btn btn num3">3</button>
-          <button class="mul-btn cal-btn btn">X</button>
-          <button class="num-btn btn num4">4</button>
-          <button class="num-btn btn num5">5</button>
-          <button class="num-btn btn num6">6</button>
-          <button class="div-btn cal-btn btn">/</button>
-          <button class="num-btn btn num7">7</button>
-          <button class="num-btn btn num8">8</button>
-          <button class="num-btn btn num9">9</button>
-          <button class="add-btn cal-btn btn">+</button>
-          <button class="clear-btn btn">C</button>
-          <button class="num-btn btn num0">0</button>
-          <button class="del-btn btn">del</button>
-          <button class="sub-btn cal-btn btn">-</button>
+          <button class="num-btn btn num1" onclick="onBtnPress(1)">1</button>
+          <button class="num-btn btn num2" onclick="onBtnPress(2)">2</button>
+          <button class="num-btn btn num3" onclick="onBtnPress(3)">3</button>
+          <button class="mul-btn cal-btn btn" onclick="onBtnPress('*');">
+            X
+          </button>
+          <button class="num-btn btn num4" onclick="onBtnPress(4)">4</button>
+          <button class="num-btn btn num5" onclick="onBtnPress(5)">5</button>
+          <button class="num-btn btn num6" onclick="onBtnPress(6)">6</button>
+          <button class="div-btn cal-btn btn" onclick="onBtnPress('/');">
+            /
+          </button>
+          <button class="num-btn btn num7" onclick="onBtnPress(7)">7</button>
+          <button class="num-btn btn num8" onclick="onBtnPress(8)">8</button>
+          <button class="num-btn btn num9" onclick="onBtnPress(9)">9</button>
+          <button class="add-btn cal-btn btn" onclick="onBtnPress('+');">
+            +
+          </button>
+          <button class="clear-btn btn" onclick="onBtnPress('C');">C</button>
+          <button class="num-btn btn num0" onclick="onBtnPress(0)">0</button>
+          <button class="del-btn btn" onclick="onBtnPress('del');">del</button>
+          <button class="sub-btn cal-btn btn" onclick="onBtnPress('-');">
+            -
+          </button>
         </div>
-          <button class="equal-to-btn">=</button>
+        <!-- <button class="equal-to-btn" onclick="onBtnPress('=');">=</button> -->
       </div>
     </div>
+    <script src="./src/script.js"></script>
   </body>
 </html>
