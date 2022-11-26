@@ -74,3 +74,6 @@ scale: 1.01;
 .cal-btn:active{
     background-color: #B8E8FC;
 }
+.clear-btn{
+    background-color: #ff6464;
+}

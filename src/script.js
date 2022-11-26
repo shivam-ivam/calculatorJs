@@ -19,7 +19,21 @@ var num = '';
 
 function onBtnPress(value){
     let tempOperator = '';
-    if(value == '='){
+    if(value == 'C'){
+        window.fnum = '';
+        window.operator = '';
+        tempOperator = '';
+        window.snum = '';
+        window.num = '';
+    }else if (value == 'del'){
+        window.num = window.num.slice(0,-1);
+        if(window.operator == ''){
+            window.fnum = window.num;
+        }else if(window.num == window.fnum){
+            window.operator = '';
+        }
+    }
+    else if(value == '='){
         if (window.fnum != '' && window.operator != '' && window.num != window.fnum + window.operator) {
             tempOperator = operator;
             snum = num.slice(fnum.length+1);
@@ -60,7 +74,6 @@ function onBtnPress(value){
         }
         window.fnum = num;
         num += operator;
-        console.log(window.snum)
         window.snum = '';
     }
     document.querySelector(".display").innerHTML = num;
