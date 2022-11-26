@@ -11,7 +11,7 @@ body{
     justify-content: center;
 }
 .calc-container{
-    height: 340px;
+    height: 370px;
     width: 270px;
     border: 1px solid;
     display: flex;

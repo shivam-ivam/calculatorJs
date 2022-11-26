@@ -19,7 +19,14 @@ var num = '';
 
 function onBtnPress(value){
     let tempOperator = '';
-    if (value == "+" || value == "-" || value == "*" || value == "/") {
+    if(value == '='){
+        if (window.fnum != '' && window.operator != '' && window.num != window.fnum + window.operator) {
+            tempOperator = operator;
+            snum = num.slice(fnum.length+1);
+            operator = '';
+        }
+    }
+    else if (value == "+" || value == "-" || value == "*" || value == "/" ) {
         if(window.fnum != ''){
             if(operator != ''){
                 snum = num.slice(fnum.length+1);
@@ -27,10 +34,12 @@ function onBtnPress(value){
             }
         operator = value;
         }
-        window.num += value;
+        if(window.num != window.fnum + window.operator){
+            window.num += value;
+        }
     }else{
         window.num += value;
-        if(operator == ''){
+        if(window.operator == ''){
             window.fnum += value;
         }
     }
@@ -51,6 +60,7 @@ function onBtnPress(value){
         }
         window.fnum = num;
         num += operator;
+        console.log(window.snum)
         window.snum = '';
     }
     document.querySelector(".display").innerHTML = num;
